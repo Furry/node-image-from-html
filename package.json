@@ -1,0 +1,10 @@
+{
+  "name": "node-image-from-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "A Furry Account - Furry",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^2.1.1"
+  }
+}
