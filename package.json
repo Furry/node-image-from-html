@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "A Furry Account - Furry",
   "license": "MIT",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "go": "tsc"
+  },
   "dependencies": {
     "puppeteer": "^2.1.1"
   },
