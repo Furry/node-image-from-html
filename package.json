@@ -1,17 +1,18 @@
 {
   "name": "node-image-from-html",
-  "version": "2.0.1",
-  "main": "index.js",
+  "version": "2.0.2",
+  "main": "./dist/index.js",
   "author": "A Furry Account - Furry",
   "license": "MIT",
   "types": "dist/index.d.ts",
   "scripts": {
+    "test": "tsc && node ./dist/tests/main.js",
     "go": "tsc"
   },
   "dependencies": {
     "puppeteer": "^2.1.1"
   },
   "devDependencies": {
-    "@types/puppeteer": "^3.0.2"
+    "@types/puppeteer": "^5.4.0"
   }
 }
