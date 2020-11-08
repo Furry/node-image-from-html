@@ -49,3 +49,4 @@ This library was designed with heavy load in mind, Tested with 10 concurrent tab
 ### Can I make a PR?
 
 Please! Any and all improvements are welcome, I have no guidelines, just make sure to document everything decently via JSDocs, and don't use implied any statements.
+[![Run on Repl.it](https://repl.it/badge/github/Furry/node-image-from-html)](https://repl.it/github/Furry/node-image-from-html)
