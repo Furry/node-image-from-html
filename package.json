@@ -1,6 +1,6 @@
 {
   "name": "node-image-from-html",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "./dist/index.js",
   "author": "A Furry Account - Furry",
   "license": "MIT",
