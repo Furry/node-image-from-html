@@ -26,7 +26,6 @@ export class BrowserHandler /* extends EventEmitter */ {
      * @param opts The puppeteer browser options to be passed through
      */
     constructor(count: number = 1, opts: puppeteer.LaunchOptions = {}) {
-        //super()
         this.count = count
         this.opts = opts
     }
@@ -97,11 +96,11 @@ export class BrowserHandler /* extends EventEmitter */ {
             return base64
         } else {
             const div = await page.$(entry)
-            .catch((err) => { throw `Could not find id ${entry}` })
-
             if (!div) {
-                throw `Error trying to select the id ${entry}`
+                console.log(document.getElementById("entry"))
+                throw `Could not find selector ${entry}. Mind selectors must be prefixed by # for ids, and . for classes.`
             }
+
             const boundingbox = await div.boundingBox()
             if (!boundingbox) {
                 throw `Error trying to determine the size of element ${entry}`
