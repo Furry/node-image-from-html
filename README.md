@@ -64,11 +64,11 @@ If it can't do something, create an issue for it and i'll be happy to add any mi
 
 | Name        | Description                                                                                                                                                                                                             | Type    |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| transparent | An optional parameter to disable the white background behind the image when rendering a PNG.                                                                                                                            | boolean |
+| omitBackground | An optional parameter to disable the white background behind the image when rendering a PNG.                                                                                                                            | boolean |
 | selector    | An optional parameter to select which element to render an image of. If unspecified, the entire page will be rendered. View https://www.w3schools.com/cssref/css_selectors.asp for more information on CSS selectors.   | string  |
 | fullPage    | A **deprecated** parameter to choose to screenshot the whole page or a portion of it.                                                                                                                                   | boolean |
 | quality     | An optional number from 1 to 100 to determine the quality of a JEPG exported image.                                                                                                                                     | number  |
-| type        | An optional parameter to choose the type of image to take. JPEG or PNG, (PNG being the default.)                                                                                                                        | string  |
+| type        | An optional parameter to choose the type of image to take. jpeg, png, or webp, (PNG being the default.)                                                                                                                        | string  |
 </p>
 
 # Examples
