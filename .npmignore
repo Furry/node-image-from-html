@@ -3,5 +3,5 @@
 /tests
 /dists/tests
 yarn.lock
-README.md
 tsconfig.json
+.gitignore

@@ -1,4 +1,15 @@
+import { BrowserHandler } from "./structs/BrowserHandler";
+import * as utils from "./utils"
 /*
-    This file serves as an index point for the lib.
+ ESModule / CJS compatibility layer
 */
-export { BrowserHandler } from "./constructs/BrowserHandler"
+
+const toExport = { BrowserHandler, utils };
+// @ts-ignore
+BrowserHandler.default = toExport;
+
+// @ts-ignore
+BrowserHandler.__esModule = true;
+
+// @ts-ignore
+export = toExport;
