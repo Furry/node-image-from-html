@@ -1,18 +1,24 @@
 {
   "name": "node-image-from-html",
-  "version": "2.0.3",
-  "main": "./dist/index.js",
+  "version": "3.0.0",
   "author": "A Furry Account - Furry",
   "license": "MIT",
+  "main": "./dist/index.js",
   "types": "dist/index.d.ts",
+  "keywords": [
+    "image",
+    "html",
+    "html-to-image",
+    "render html",
+    "html-to-image-node",
+    "html-to-canvas",
+    "canvas"
+  ],
   "scripts": {
     "test": "tsc && node ./dist/tests/main.js",
-    "go": "tsc"
+    "go": "tsc && node ./dist/index.js"
   },
   "dependencies": {
-    "puppeteer": "^2.1.1"
-  },
-  "devDependencies": {
-    "@types/puppeteer": "^5.4.0"
+    "puppeteer": "^14.4.1"
   }
 }
