@@ -17,7 +17,7 @@ This single-dependency library provides a simple API to render HTML content usin
 &nbsp;
 > Question: Why use this over other libraries?
 
-This library is actively maintained, and uses a persistant browser instance to render the content, allowing it to render images within a matter of milliseconds after starting.
+This library is actively maintained, and uses a persistant browser instance to render the content, allowing it to render images within a matter of milliseconds after starting. On top of this, Network Requests & Javascript can be disabled within the rendering process to avoid any potential security issues.
 
 > Question: What processing power is needed?
 
@@ -30,6 +30,7 @@ Yes, all css is supported, and can be done inline or as a \<style>\</style> bloc
 > Question: Why can't the library do xyz?
 
 If it can't do something, create an issue for it and i'll be happy to add any missing features! 
+
 # Usage:
 <p>
     <ul>
@@ -54,7 +55,8 @@ If it can't do something, create an issue for it and i'll be happy to add any mi
 |-------------|---------------------------------------------------------|--------|
 | concurrency | The amount of tabs/render jobs that can process at once | number |
 | timeout     | The max timeout a tab should wait before giving up.     | number |
-
+| disableJavaScript | Disable JavaScript in the browser.                | boolean |
+| disableNetwork | Disable network in the browser.                     | boolean |
 </p>
 
 <h2 align="center">ScreenshotOptions</h2>

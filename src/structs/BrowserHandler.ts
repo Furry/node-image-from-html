@@ -51,6 +51,17 @@ export class BrowserHandler {
 
         this.pages = await Promise.all(spawnTasks)
             .then((pages: Page[]) => pages.map(p => new ExtendedPage(p)));
+
+        // Apply the network/js settings.
+        for (const epage of this.pages) {
+            if (this.options.disableJavaScript) {
+                epage.page.setJavaScriptEnabled(false);
+            }
+
+            if (this.options.disableNetwork) {
+                epage.page.setRequestInterception(true);
+            }
+        }
     }
 
     /**
