@@ -35,13 +35,13 @@ If it can't do something, create an issue for it and i'll be happy to add any mi
 <p>
     <ul>
         <li>
-            <a href = "/Simple Rendering">Simple Rendering</a>
+            <a href = "#Simple-Rendering">Simple Rendering</a>
         </li>
         <li>
-            <a href = "">Multiple Renders / Selector</a>
+            <a href = "#Multiple-Renders">Multiple Renders / Selector</a>
         </li>
         <li>
-            <a href = "">Rendering embedded images</a>
+            <a href = "#Embedding-Images">Rendering embedded images</a>
         </li>
     </ul>
 </p>
